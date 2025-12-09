@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Star, Wifi, Parking, Pool, Utensils, Car } from "lucide-react";
+import { MapPin, Star, Wifi,  Utensils, Car } from "lucide-react";
 import { motion } from "framer-motion";
 import type { HotelAPI } from "@/types/hotels";
 import EmbeddedMap from "../embeddedmap";
@@ -53,12 +53,7 @@ const getAmenitiesIcons = (hotel: HotelAPI) => {
   if (hotel.property.facilities?.some(f => f.name.toLowerCase().includes('wifi'))) {
     amenities.push({ icon: Wifi, label: 'Free WiFi' });
   }
-  if (hotel.property.facilities?.some(f => f.name.toLowerCase().includes('parking'))) {
-    amenities.push({ icon: Parking, label: 'Parking' });
-  }
-  if (hotel.property.facilities?.some(f => f.name.toLowerCase().includes('pool'))) {
-    amenities.push({ icon: Pool, label: 'Pool' });
-  }
+
   if (hotel.property.facilities?.some(f => f.name.toLowerCase().includes('restaurant'))) {
     amenities.push({ icon: Utensils, label: 'Restaurant' });
   }
