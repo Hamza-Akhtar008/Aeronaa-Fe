@@ -22,14 +22,13 @@ const Sidebar = () => {
   const sidebarRef = useRef<HTMLDivElement>(null);
   const menuItems = [
   { icon: <Calendar size={20} />, title: 'My Hotel Bookings', path: '/user/bookings' },
-  { icon: <TicketCheck size={20} />, title: 'My Flight Booking', path: '/user/flightbooking' },
-  { icon: <Car size={20} />, title: 'My Car Booking', path: '/user/car-bookings' },
+
   { icon: <Package size={20} />, title: 'My Umrah Booking', path: '/user/umrah-package' },
 
 
   { icon: <UserCircle size={20} />, title: 'Profile', path: '/user/profile' },
   { icon: <Star size={20} />, title: 'My Reviews', path: '/user/reviews' },
-  { icon: <Heart size={20} />, title: 'Saved Hotels', path: '/user/saved-hotels' },
+
  // { icon: <Bell size={20} />, title: 'Notifications', path: '/user/notifications' },
   { icon: <LogOut size={20} />, title: 'Logout',path: '/signin', onClick: () => {logout() 
     
