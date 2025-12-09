@@ -1,0 +1,17 @@
+export const languages = [
+  { code: "en", name: "English", emoji: "🇺🇸" },
+  { code: "ur", name: "Urdu", emoji: "🇵🇰" },
+  { code: "ar", name: "Arabic", emoji: "🇸🇦" },
+  { code: "es", name: "Spanish", emoji: "🇪🇸" },
+  { code: "fr", name: "French", emoji: "🇫🇷" },
+  { code: "de", name: "German", emoji: "🇩🇪" },
+  { code: "it", name: "Italian", emoji: "🇮🇹" },
+  { code: "pt", name: "Portuguese", emoji: "🇵🇹" },
+  { code: "ru", name: "Russian", emoji: "🇷🇺" },
+  { code: "zh", name: "Chinese (Simplified)", emoji: "🇨🇳" },
+  { code: "ja", name: "Japanese", emoji: "🇯🇵" },
+  { code: "ko", name: "Korean", emoji: "🇰🇷" },
+  { code: "tr", name: "Turkish", emoji: "🇹🇷" },
+  { code: "hi", name: "Hindi", emoji: "🇮🇳" },
+  { code: "bn", name: "Bengali", emoji: "🇧🇩" },
+];
