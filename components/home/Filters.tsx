@@ -71,48 +71,7 @@ const Filters = ({
           Hotels
         </TabsTrigger>
 
-        {/* Flights */}
-        <TabsTrigger
-          value="flights"
-          className={`flex items-center gap-1 sm:gap-2 px-4 sm:px-8 py-2 sm:py-2.5 font-semibold text-xs sm:text-[14px]
-            ${isMobile ? "rounded-[13.08px] border border-gray-300 bg-white" : "rounded-none border border-gray-300"}
-            text-gray-600 data-[state=active]:bg-[#0a3a7a] data-[state=active]:text-white`}
-        >
-          <img
-            src={`/images/${activeTab === "flights" ? "WhiteAeroplane" : "Aeroplane"}.svg`}
-            alt="Aeroplane Icon"
-            className="h-3 w-3 sm:h-4 sm:w-4"
-          />
-          Flights
-        </TabsTrigger>
-
-        {/* Cars */}
-        <TabsTrigger
-          value="cars"
-          className={`flex items-center gap-1 sm:gap-2 px-4 sm:px-8 py-2 sm:py-2.5 font-semibold text-xs sm:text-[14px]
-            ${isMobile ? "rounded-[13.08px] border border-gray-300 bg-white" : "rounded-none border border-gray-300"}
-            text-gray-600 data-[state=active]:bg-[#0a3a7a] data-[state=active]:text-white`}
-        >
-          <img
-            src={`/images/${activeTab === "cars" ? "carrentalwhite" : "Carlogo"}.svg`}
-            alt="Car Icon"
-            className="h-3 w-3 sm:h-4 sm:w-4"
-          />
-          Car Rentals
-        </TabsTrigger>
-
-        {/* Property */}
-        <TabsTrigger
-          value="property"
-          className={`flex items-center gap-1 sm:gap-2 px-4 sm:px-8 py-2 sm:py-2.5 font-semibold text-xs sm:text-[14px]
-            ${isMobile ? "rounded-[13.08px] border border-gray-300 bg-white" : "rounded-none border border-gray-300"}
-            text-gray-600 data-[state=active]:bg-[#0a3a7a] data-[state=active]:text-white`}
-        >
-          <svg className="h-3 w-3 sm:h-4 sm:w-4" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-          </svg>
-          Property
-        </TabsTrigger>
+    
 
         {/* Umrah */}
         <TabsTrigger
@@ -190,9 +149,7 @@ Search
                 {activeTab === "hotels" && (
                   <HotelSearchFilter initialValues={initialValues} selectcity={selectedCity} />
                 )}
-                {activeTab === "flights" && <FlightSearch />}
-                {activeTab === "cars" && <CarRentalSearch />}
-                {activeTab === "property" && <PropertySearchFilter />}
+               
                 {activeTab === "umrah" && <UmrahSearch />}
               </div>
             </SheetContent>

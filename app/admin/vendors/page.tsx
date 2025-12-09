@@ -210,8 +210,7 @@ const handleStatusChange = async (vendorId: number, newStatus: string) => {
       <div className="flex gap-3">
         {[
           { key: "hotel", label: "Hotel Vendors" },
-          { key: "car", label: "Car Agents" },
-          { key: "property", label: "Property Agents" },
+       
           { key: "umrah", label: "Umrah Agents" },
         ].map((tab) => (
           <Button

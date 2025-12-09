@@ -674,8 +674,7 @@ export default function Register() {
       </SelectTrigger>
       <SelectContent>
         <SelectItem value="Hotels">Hotels</SelectItem>
-        <SelectItem value="Car Rentals">Car Rentals</SelectItem>
-        <SelectItem value="Properties Selling">Properties Selling</SelectItem>
+     
         <SelectItem value="Umrah Packages">Umrah Packages</SelectItem>
       </SelectContent>
     </Select>

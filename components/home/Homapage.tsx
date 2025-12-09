@@ -170,10 +170,10 @@ async function getCountryFromCoords(lat: number, lng: number) {
       
 
 
-          {/* Travel Booking Page */}
+          {/* Travel Booking Page
           <section className="w-full  max-w-[98rem]   mx-auto px-2 sm:px-4 lg:px-6 pt-4">
             <TravelBookingPage />
-          </section>
+          </section> */}
 
           {/* App Download Section */}
         </div>

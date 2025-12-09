@@ -114,68 +114,7 @@ activeTab=="umrah"?"/images/Umrah.jpg":"/images/propertybackground.png"
       Hotels
     </TabsTrigger>
 
-    {/* Flights */}
-    <TabsTrigger
-      value="flights"
-      className={`flex items-center gap-1 sm:gap-2 px-4 sm:px-8 py-2 sm:py-2.5 font-semibold text-xs sm:text-[14px]
-        ${
-          isMobile
-            ? "rounded-[13.08px] border border-gray-300 bg-white"
-            : "rounded-none border border-gray-300"
-        }
-        text-gray-600 data-[state=active]:bg-[#0a3a7a] data-[state=active]:text-white`}
-    >
-      <img
-        src={`/images/${
-          activeTab === "flights" ? "WhiteAeroplane" : "Aeroplane"
-        }.svg`}
-        alt="Aeroplane Icon"
-        className="h-3 w-3 sm:h-4 sm:w-4"
-      />
-      Flights
-    </TabsTrigger>
 
-    {/* Cars */}
-    <TabsTrigger
-      value="cars"
-      className={`flex items-center gap-1 sm:gap-2 px-4 sm:px-8 py-2 sm:py-2.5 font-semibold text-xs sm:text-[14px]
-        ${
-          isMobile
-            ? "rounded-[13.08px] border border-gray-300 bg-white"
-            : "rounded-none border border-gray-300"
-        }
-        text-gray-600 data-[state=active]:bg-[#0a3a7a] data-[state=active]:text-white`}
-    >
-      <img
-        src={`/images/${
-          activeTab === "cars" ? "carrentalwhite" : "Carlogo"
-        }.svg`}
-        alt="Car Icon"
-        className="h-3 w-3 sm:h-4 sm:w-4"
-      />
-      Car Rentals
-    </TabsTrigger>
-
-    {/* Property */}
-    <TabsTrigger
-      value="property"
-      className={`flex items-center gap-1 sm:gap-2 px-4 sm:px-8 py-2 sm:py-2.5 font-semibold text-xs sm:text-[14px]
-        ${
-          isMobile
-            ? "rounded-[13.08px] border border-gray-300 bg-white"
-            : "rounded-none border border-gray-300"
-        }
-        text-gray-600 data-[state=active]:bg-[#0a3a7a] data-[state=active]:text-white`}
-    >
-      <img
-        src={`/images/${
-          activeTab === "property" ? "propertyicon" : "propertyicon"
-        }.png`}
-        alt="Property Icon"
-        className="h-3 w-3 sm:h-4 sm:w-4"
-      />
-      Property
-    </TabsTrigger>
 
     {/* Umrah */}
     <TabsTrigger

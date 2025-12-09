@@ -217,87 +217,10 @@ export default function AdminLayout({
                   )}
                 </Link>
 
-  <Link
-                  href="/admin/supoortusers"
-                  onClick={() => setSidebarOpen(false)}
-                  className={`group flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02] ${
-                    pathname === "/admin/supoortusers"
-                      ? "bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:border-white/40 shadow-lg"
-                      : "text-white/80 hover:text-white hover:bg-white/10 hover:backdrop-blur-sm hover:shadow-white/5"
-                  }`}
-                >
-                  <div
-                    className={`p-1.5 rounded-lg transition-all duration-300 ${
-                      pathname === "/admin/profile" ? "bg-white/20 shadow-sm" : "bg-white/10 group-hover:bg-white/20"
-                    }`}
-                  >
-                    <Users className="h-4 w-4" />
-                  </div>
-                  <span className={pathname === "/admin/supoortusers" ? "font-semibold" : "font-medium"}>Flight Manager</span>
-                  {pathname === "/admin/supoortusers" && (
-                    <div className="ml-auto h-2 w-2 rounded-full bg-white animate-pulse shadow-sm"></div>
-                  )}
-                </Link>
-                  <Link
-                    href="/admin/agentusers"
-                    onClick={() => setSidebarOpen(false)}
-                    className={`group flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02] ${
-                      pathname === "/admin/agentusers"
-                        ? "bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:border-white/40 shadow-lg"
-                        : "text-white/80 hover:text-white hover:bg-white/10 hover:backdrop-blur-sm hover:shadow-white/5"
-                    }`}
-                  >
-                    <div
-                      className={`p-1.5 rounded-lg transition-all duration-300 ${
-                        pathname === "/admin/agentusers" ? "bg-white/20 shadow-sm" : "bg-white/10 group-hover:bg-white/20"
-                      }`}
-                    >
-                      <Users className="h-4 w-4" />
-                    </div>
-                    <span className={pathname === "/admin/agentusers" ? "font-semibold" : "font-medium"}>Agent Users</span>
-                    {pathname === "/admin/agentusers" && (
-                      <div className="ml-auto h-2 w-2 rounded-full bg-white animate-pulse shadow-sm"></div>
-                    )}
-                  </Link>
-  <Link
-                  href="/admin/flights"
-                  onClick={() => setSidebarOpen(false)}
-                  className={`group flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02] ${
-                    pathname === "/admin/flights"
-                      ? "bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:border-white/40 shadow-lg"
-                      : "text-white/80 hover:text-white hover:bg-white/10 hover:backdrop-blur-sm hover:shadow-white/5"
-                  }`}
-                >
-                  <div
-                    className={`p-1.5 rounded-lg transition-all duration-300 ${
-                      pathname === "/admin/flights" ? "bg-white/20 shadow-sm" : "bg-white/10 group-hover:bg-white/20"
-                    }`}
-                  >
-                    <Plane className="h-4 w-4" />
-                  </div>
-                  <span className={pathname === "/admin/flights" ? "font-semibold" : "font-medium"}>Flights</span>
-                </Link>
-                  <Link
-                  href="/admin/flightbooking"
-                  onClick={() => setSidebarOpen(false)}
-                  className={`group flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02] ${
-                    pathname === "/admin/flightbooking"
-                      ? "bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:border-white/40 shadow-lg"
-                      : "text-white/80 hover:text-white hover:bg-white/10 hover:backdrop-blur-sm hover:shadow-white/5"
-                  }`}
-                >
-                  <div
-                    className={`p-1.5 rounded-lg transition-all duration-300 ${
-                      pathname === "/admin/profile" ? "bg-white/20 shadow-sm" : "bg-white/10 group-hover:bg-white/20"
-                    }`}
-                  >
-                  <ShoppingCart className="h-4 w-4" />
-                  </div>
-                  <span className={pathname === "/admin/flightbooking" ? "font-semibold" : "font-medium"}>Flight Bookings</span>
-                  {pathname === "/admin/flightbooking" && (
-                    <div className="ml-auto h-2 w-2 rounded-full bg-white animate-pulse shadow-sm"></div>
-                  )}
-                </Link>
+
+              
+
+               
 
                 <Link
                   href="/admin/umrah"
@@ -375,46 +298,9 @@ export default function AdminLayout({
                   <span className={pathname === "/admin/bookings" ? "font-semibold" : "font-medium"}>Hotel Bookings</span>
                  
                 </Link>
-                <Link
-                  href="/admin/cars"
-                  onClick={() => setSidebarOpen(false)
-                  }
-                  className={`group flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02] ${
-                    pathname === "/admin/cars"
-                      ? "bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:border-white/40 shadow-lg"
-                      : "text-white/80 hover:text-white hover:bg-white/10 hover:backdrop-blur-sm hover:shadow-white/5"
-                  }`}
-                >
-                  <div
-                    className={`p-1.5 rounded-lg transition-all duration-300 ${
-                      pathname === "/admin/cars" ? "bg-white/20 shadow-sm" : "bg-white/10 group-hover:bg-white/20"
-                    }`}
-                  >
-                    <Car className="h-4 w-4" />
-                  </div>
-                  <span className={pathname === "/admin/cars" ? "font-semibold" : "font-medium"}>Cars</span>
-                </Link>
+              
 
-                  <Link
-                  href="/admin/carsbookings"
-                  onClick={() => setSidebarOpen(false)
-                  }
-                  className={`group flex items-center gap-3 rounded-2xl px-4 py-3.5 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:scale-[1.02] ${
-                    pathname === "/admin/carsbookings"
-                      ? "bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 hover:border-white/40 shadow-lg"
-                      : "text-white/80 hover:text-white hover:bg-white/10 hover:backdrop-blur-sm hover:shadow-white/5"
-                  }`}
-                >
-                  <div
-                    className={`p-1.5 rounded-lg transition-all duration-300 ${
-                      pathname === "/admin/carsbookings" ? "bg-white/20 shadow-sm" : "bg-white/10 group-hover:bg-white/20"
-                    }`}
-                  >
-                    <Car className="h-4 w-4" />
-                  </div>
-                  <span className={pathname === "/admin/carsbookings" ? "font-semibold" : "font-medium"}>Cars Bookings</span>
-                </Link>
-
+               
                 {/* <Link
                   href="/admin/properties"
                   onClick={() => setSidebarOpen(false)}
@@ -561,15 +447,7 @@ export default function AdminLayout({
                         <Hotel className="mr-1.5 h-3 w-3" /> Hotels
                       </Link>
                     </Button>
-                    <Button
-                      size="sm"
-                      className="bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/40 shadow-lg hover:shadow-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm rounded-xl"
-                      asChild
-                    >
-                      <Link href="/admin/cars" onClick={() => setSidebarOpen(false)}>
-                        <Car className="mr-1.5 h-3 w-3" /> Cars
-                      </Link>
-                    </Button>
+                   
                     <Button
                       size="sm"
                       className="bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/40 shadow-lg hover:shadow-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm rounded-xl"
@@ -579,15 +457,7 @@ export default function AdminLayout({
                         <Plane className="mr-1.5 h-3 w-3" /> Umrah
                       </Link>
                     </Button>
-                    <Button
-                      size="sm"
-                      className="bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/40 shadow-lg hover:shadow-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm rounded-xl"
-                      asChild
-                    >
-                      <Link href="/admin/properties" onClick={() => setSidebarOpen(false)}>
-                        <Package className="mr-1.5 h-3 w-3" /> Properties
-                      </Link>
-                    </Button>
+                   
                   </div>
                 </CardContent>
               </Card>

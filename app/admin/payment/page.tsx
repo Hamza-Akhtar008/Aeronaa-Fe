@@ -295,11 +295,11 @@ setCurrentPageMonth(1); // Reset to first page when new bookings are loaded
         <div className="flex gap-3">
               {[
                 { key: "hotel", label: "Hotel Payments" },
-                { key: "car", label: "Car Payments" },
+         
                 
                 
                 { key: "umrah", label: "Umrah Payments" },
-                { key: "flight", label: "Flight Payments" },
+           
               ].map((tab) => (
                 <Button
                   key={tab.key}

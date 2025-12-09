@@ -96,7 +96,7 @@ export default function VendorsPage() {
   const [loadingHotels, setLoadingHotels] = useState<Set<number>>(new Set())
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage] = useState(10)
-  const [activeTab, setActiveTab] = useState<"hotel" | "car" | "property" | "umrah"|"flight">("hotel")
+  const [activeTab, setActiveTab] = useState<"hotel" |"umrah">("hotel")
   const [refreshKey, setRefreshKey] = useState(0)
 
   const roleMap: Record<typeof activeTab, string> = {
@@ -218,11 +218,11 @@ export default function VendorsPage() {
       <div className="flex gap-3">
         {[
           { key: "hotel", label: "Hotel Vendors" },
-          { key: "car", label: "Car Agents" },
+       
           
           
           { key: "umrah", label: "Umrah Agents" },
-          { key: "flight", label: "Flight Agents" },
+        
         ].map((tab) => (
           <Button
             key={tab.key}
@@ -242,7 +242,7 @@ export default function VendorsPage() {
           </Button>
         ))}
       </div>
-{activeTab!="flight"&&
+{
 <>
   <Card className="border-0 bg-white shadow-lg rounded-3xl overflow-hidden">
         <CardHeader>
@@ -291,8 +291,7 @@ export default function VendorsPage() {
         <CardHeader>
           <CardTitle className="text-xl font-bold text-gray-900">
             {activeTab === "hotel" && "Hotel Vendors"}
-            {activeTab === "car" && "Car Agents"}
-            {activeTab === "property" && "Property Agents"}
+      
             {activeTab === "umrah" && "Umrah Agents"} ({filteredVendors.length})
           </CardTitle>
           <CardDescription className="text-gray-600">Manage vendor accounts and their properties</CardDescription>
