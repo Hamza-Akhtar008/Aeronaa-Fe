@@ -264,7 +264,7 @@ export function Footer() {
         <div className="bg-black py-4">
           <div className="container mx-auto px-6">
             <div className="text-center text-white/70 text-sm">
-              © 2025 Aeronaa | Designed By Firnas.Tech | All Rights
+              © 2025 Aeronaa  | All Rights
               Reserved
             </div>
           </div>
