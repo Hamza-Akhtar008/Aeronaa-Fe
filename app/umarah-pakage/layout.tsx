@@ -10,7 +10,7 @@ export default function UmrahPackageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ProtectedRoute allowedRoles={["vendor","agent"]}>
+    <ProtectedRoute allowedRoles={["umrah"]}>
       <DashboardLayout>
         <main>{children}</main>
       </DashboardLayout>
