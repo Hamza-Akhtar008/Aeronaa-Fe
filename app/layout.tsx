@@ -2,7 +2,7 @@
 "use client";
 import "./globals.css";
 import { AuthProvider, useAuth } from "@/store/authContext";  // Ensure correct import
-import FloatingSpeedDial from "@/components/floatingspeeddail";
+
 import { HeroTabProvider } from "@/components/home/HeroTabContext";
 import Script from "next/script";
 import { Toaster } from "react-hot-toast";
@@ -65,7 +65,7 @@ const AuthContent = ({ children }: { children: React.ReactNode }) => {
   // Show FloatingSpeedDial only when authenticated and role is "vendor"
   return (
     <>
-      {auth && !loading && auth.role === "agent" ? <FloatingSpeedDial /> : null}
+  
       <HeroTabProvider>
  <meta
           name="google-site-verification"

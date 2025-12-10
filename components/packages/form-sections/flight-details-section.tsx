@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Plane, Calendar, MapPin } from "lucide-react"
 import AsyncSelect from "react-select/async"
-import { debouncedFetchMunicipalities, debouncedFetchAirports } from "@/components/ticket-form"
+import { debouncedFetchMunicipalities, debouncedFetchAirports } from "@/components/Flight-helper"
 import type { PackageFormData } from "../package-form"
 
 

@@ -1,6 +1,6 @@
 export * from "./HeroSection"
 export * from "./PopularDestinations"
 export * from "./ThingsToDo"
-export * from "./FeaturedProperties"
+
 export * from "./PopularRestaurants"
 export * from "./Footer"

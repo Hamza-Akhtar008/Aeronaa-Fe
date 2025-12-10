@@ -17,9 +17,9 @@ import { useState, useEffect, useRef } from "react";
 
 import Image from "next/image";
 import HotelSearchFilter from "./search/HotelSearchFilter";
-import { CarRentalSearch, FlightSearch } from "./search";
+
 import { useHeroTab } from "./HeroTabContext";
-import PropertySearchFilter from "./search/propertySearch";
+
 import UmrahSearch from "./search/UmrahSearch";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -144,15 +144,7 @@ activeTab=="umrah"?"/images/Umrah.jpg":"/images/propertybackground.png"
             <TabsContent value="hotels" className="m-0 p-0 w-full text-center">
               <HotelSearchFilter />
             </TabsContent>
-            <TabsContent value="cars" className="m-0 p-0 w-full text-center">
-              <CarRentalSearch />
-            </TabsContent>
-            <TabsContent value="flights" className="m-0 p-0 w-full text-center">
-              <FlightSearch />
-            </TabsContent>
-            <TabsContent value="property" className="m-0 p-0 w-full text-center">
-              <PropertySearchFilter />
-            </TabsContent>
+         
             <TabsContent value="umrah" className="m-0 p-0 w-full text-center">
               <UmrahSearch />
             </TabsContent>

@@ -10,9 +10,7 @@ import { Button } from "@/components/ui/button"
 import { useIsMobile } from "@/hooks/use-mobile"
 
 import HotelSearchFilter from "./search/HotelSearchFilter"
-import FlightSearch from "./search/FlightSearch"
-import CarRentalSearch from "./search/CarRentalSearch"
-import PropertySearchFilter from "./search/propertySearch"
+
 import UmrahSearch from "./search/UmrahSearch"
 import type { CityResult } from "./search/types"
 import { format, differenceInDays, parseISO } from "date-fns"
@@ -172,15 +170,7 @@ Search
         <TabsContent value="hotels" className="m-0 p-0 w-full text-center">
           <HotelSearchFilter initialValues={initialValues} selectcity={selectedCity} />
         </TabsContent>
-        <TabsContent value="cars" className="m-0 p-0 w-full text-center">
-          <CarRentalSearch />
-        </TabsContent>
-        <TabsContent value="flights" className="m-0 p-0 w-full text-center">
-          <FlightSearch />
-        </TabsContent>
-        <TabsContent value="property" className="m-0 p-0 w-full text-center">
-          <PropertySearchFilter />
-        </TabsContent>
+        
         <TabsContent value="umrah" className="m-0 p-0 w-full text-center">
           <UmrahSearch />
         </TabsContent>

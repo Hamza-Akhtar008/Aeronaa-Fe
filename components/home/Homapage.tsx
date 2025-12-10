@@ -24,7 +24,7 @@ import { BookYourProperty } from "@/components/home/FeaturedProperties";
 import { OffersSection } from "@/components/home/offersection";
 import { useHeroTab } from "./HeroTabContext";
 import TopTredingDestination from "./TopTredingDestination";
-import { FeaturePropertyMain } from "./FeaturedProperty";
+
 import { FeatureUmrah } from "./FeaturedUmrah";
 
 
@@ -155,12 +155,7 @@ async function getCountryFromCoords(lat: number, lng: number) {
            <BookYourRide />
           </div>
 }
-    
-{activeTab=="property"&&
-  <div ref={exploreRef} className="w-full  max-w-[98rem] mx-auto px-2 sm:px-4 lg:px-6 pt-12">
-            <FeaturePropertyMain />
-          </div>
-}
+
       
 {activeTab=="umrah"&&
   <div ref={exploreRef} className="w-full  max-w-[98rem] mx-auto px-2 sm:px-4 lg:px-6 pt-12">
