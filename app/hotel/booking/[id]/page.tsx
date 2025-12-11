@@ -22,7 +22,7 @@ import type { BookingRoom, Hotel } from "@/types" // Import types
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY ||
-    "pk_live_51RNDLyLaGWi6LnLvHm4QpTVVre3bPTAmyIHFG6v6fDRsGzicvlKTkgOR5KxuqDpstIU08FicT115Ym9RVBmiOiXR00DqkkZGcf",
+    "pk_test_51RNDLyLaGWi6LnLvMVsEZb6pDSMfpZH6kM6hrjclFqADw0sBjt3myZCdegHLQ63wc1e80uq0SW96qIP8VPokvbQi00T84mZpMY",
 )
 
 // Sample hotel data
